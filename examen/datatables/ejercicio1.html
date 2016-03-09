@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Examen 2 DAW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+        #formulario{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+    <table id="tabla" class="display">
+        <thead>
+            <th>id_alumno</th>
+            <th>Nombre</th>
+            <th>apellido1</th>
+            <th>apellido2</th>
+            <th>nota_cliente</th>
+            <th>nota_x</th>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <th>id_alumno</th>
+            <th>Nombre</th>
+            <th>apellido1</th>
+            <th>apellido2</th>
+            <th>nota_cliente</th>
+            <th>nota_x</th>
+        </tfoot>
+    </table>
+    <div id="formulario" class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <form class="form-horizontal">
+                <div>
+                    <div class="form-group">
+                        <label for="matricula" class="col-sm-2 control-label">Matricula</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="matricula" placeholder="Numero de matricula">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido1" class="col-sm-2 control-label">Primer apellido</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="apellido1" placeholder="Primer apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido2" class="col-sm-2 control-label">Segundo apellido</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="apellido2" placeholder="Segundo apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notaCliente" class="col-sm-2 control-label">Nota cliente</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="notaCliente" placeholder="Nota cliente">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notaX" class="col-sm-2 control-label">Nota X</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="notaX" placeholder="Nota X">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="jquery-1.12.0.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="scripts/ejercicio1.js"></script>
+</body>
+
+</html>

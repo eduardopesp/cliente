@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <script src="jquery-1.11.3.js"></script>
+    <title>JSON</title>
+    <style type="text/css">
+    #rojo {
+        color: red;
+    }
+    
+    #azul {
+        color: blue;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="dias">Número de días de los que quieres ver la predicción (máximo 4)</label>
+        <div>
+            <input id="dias" type="text">
+            <button> Ver predicción </button>
+        </div>
+        <table>
+            <tr class="dia">
+            </tr>
+            <tr class="icono">
+            </tr>
+            <tr class="temperatura">
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $.getJSON("tiempo.json", function(data) {
+            $("button").click(function(event) {
+                $("td").remove();
+                var dias = $("#dias").val();
+                for (var i = 0; i < dias; i++) {
+                    var icono = data.datos.dia[i].icono;
+                    var minima = data.datos.dia[i].temp_minima;
+                    var maxima = data.datos.dia[i].temp_maxima;
+                    var dia_semana = establecer_dia(i);
+                    $(".dia").append("<td>" + dia_semana + "</td>");
+                    $(".icono").append("<td><img src='" + icono + "'></td>");
+                    $(".temperatura").append("<td><span id='azul'>" + minima + "</span>|<span id='rojo'>" + maxima + "</span></td>");
+                };
+            });
+        });
+
+        function establecer_dia(x) {
+            switch (x) {
+                case 0:
+                    return "hoy";
+                    break;
+                case 1:
+                    return "manana";
+                    break;
+                case 2:
+                    return "miercoles";
+                    break;
+                case 3:
+                    return "jueves";
+                    break;
+                case 4:
+                    return "viernes";
+                    break;
+                case 5:
+                    return "sabado";
+                    break;
+                case 6:
+                    return "domingo";
+                    break;
+            }
+        }
+
+    });
+    </script>
+</body>
+
+</html>

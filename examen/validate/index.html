@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Examen 2 DAW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/additional-methods.js"></script>
+    <style type="text/css">
+    .error {
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor" class="row">
+        <div class="col-md-4 col-md-offset-3">
+            <form id="formulario" class="form-horizontal" novalidate action="accion.php" method="post">
+                <div>
+                    <div class="form-group">
+                        <label for="alumno" class="col-sm-2 control-label">Id Alumno</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="id_alumno" name="id_alumno" placeholder="Id alumno">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="matricula" class="col-sm-2 control-label">Matricula</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="matricula" name="matricula" placeholder="Numero de matricula">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido1" class="col-sm-2 control-label">Primer apellido</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="apellido1" name="apellido1" placeholder="Primer apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido2" class="col-sm-2 control-label">Segundo apellido</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="apellido2" name="apellido2" placeholder="Segundo apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notaCliente" class="col-sm-2 control-label">Nota cliente</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nota_cliente" name="nota_cliente" placeholder="Nota cliente">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notaX" class="col-sm-2 control-label">Nota X</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nota_x" name="nota_x" placeholder="Nota X">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="beca" class="col-sm-2 control-label">Beca</label>
+                        <div class="col-sm-10">
+                            <input type="radio" value="no" name="beca" id="beca_no" /> NO
+                            <input type="radio" value="si" name="beca" id="beca_si" /> SI
+                            <input type="text" class="form-control" id="beca" placeholder="tipo beca" name="beca_name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        jQuery.validator.addMethod("beca", function(value, element) {
+            if (value === "DAW1" || value === "DAW2") {
+                return true
+            }
+        }, "Introduce DAW1 o DAW2");
+        $('#formulario').validate({
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            rules: {
+                id_alumno: {
+                    required: true,
+                    remote: "php/validar_id.php"
+                },
+                nombre: {
+                    required: true,
+                    lettersonly: true,
+                    minlength: 3
+                },
+                apellido1: {
+                    required: true,
+                    lettersonly: true,
+                    minlength: 3
+
+                },
+                nota_x: {
+                    required: true,
+                    min: 0,
+                    max: 10
+                },
+                nota_cliente: {
+                    required: true,
+                    min: 0,
+                    max: 10
+                },
+                beca: 'required',
+                beca_name: {
+                    required: '#beca_si:checked',
+                    beca: true
+                }
+            },
+            messages: {
+                id_alumno: {
+                    //required: "Campo obligatorio",
+                    //remote: "Id ya está en uso."
+                },
+                nombre: {
+                    required: "Campo obligatorio",
+                    lettersonly: "Solo letras",
+                    minlength: "Escriba minimo 3 letras"
+                },
+                apellido1: {
+                    required: "Campo obligatorio",
+                    lettersonly: "Solo letras",
+                    minlength: "Escriba minimo 3 letras"
+                }
+            }
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>

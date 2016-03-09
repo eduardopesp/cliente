@@ -1,0 +1,137 @@
+﻿{
+    "datos": {
+        "informacion": {
+            
+            "uso": "Se autoriza el uso de estos datos citando a www.tutiempo.net como fuente de los mismos.",
+            "language": "es"
+            
+        },
+        "localidad": {
+            "nombre": "Zaragoza",
+            "pais": "España"
+        },
+        
+        "dia": [
+                {
+                    "fecha": "2016-2-29",
+                    "fecha_larga": "Lunes 29 de Febrero",
+                    "temp_maxima": "10",
+                    "temp_minima": "5",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/2.png",
+                    "texto": "Nubes dispersas",
+                    "humedad": "64",
+                    "viento": "66",
+                    "dir_viento": "Noroeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/NO.png",
+                    "salida_sol": "7:42",
+                    "puesta_sol": "18:51",
+                    "salida_luna": "00:24",
+                    "puesta_luna": "11:04",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna21.gif"
+                },
+                {
+                    "fecha": "2016-3-1",
+                    "fecha_larga": "Martes 1 de Marzo",
+                    "temp_maxima": "13",
+                    "temp_minima": "5",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/6.png",
+                    "texto": "Muy nuboso",
+                    "humedad": "62",
+                    "viento": "57",
+                    "dir_viento": "Noroeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/NO.png",
+                    "salida_sol": "7:41",
+                    "puesta_sol": "18:52",
+                    "salida_luna": "01:21",
+                    "puesta_luna": "11:42",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna22.gif"
+                },
+                {
+                    "fecha": "2016-3-2",
+                    "fecha_larga": "Miércoles 2 de Marzo",
+                    "temp_maxima": "18",
+                    "temp_minima": "7",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/2.png",
+                    "texto": "Nubes dispersas",
+                    "humedad": "59",
+                    "viento": "45",
+                    "dir_viento": "Noroeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/NO.png",
+                    "salida_sol": "7:39",
+                    "puesta_sol": "18:54",
+                    "salida_luna": "02:15",
+                    "puesta_luna": "12:24",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna23.gif"
+                },
+                {
+                    "fecha": "2016-3-3",
+                    "fecha_larga": "Jueves 3 de Marzo",
+                    "temp_maxima": "13",
+                    "temp_minima": "6",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/6.png",
+                    "texto": "Muy nuboso",
+                    "humedad": "67",
+                    "viento": "42",
+                    "dir_viento": "Noroeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/NO.png",
+                    "salida_sol": "7:38",
+                    "puesta_sol": "18:55",
+                    "salida_luna": "03:09",
+                    "puesta_luna": "13:13",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna24.gif"
+                },
+                {
+                    "fecha": "2016-3-4",
+                    "fecha_larga": "Viernes 4 de Marzo",
+                    "temp_maxima": "15",
+                    "temp_minima": "7",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/6.png",
+                    "texto": "Muy nuboso",
+                    "humedad": "64",
+                    "viento": "35",
+                    "dir_viento": "Oeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/O.png",
+                    "salida_sol": "7:36",
+                    "puesta_sol": "18:56",
+                    "salida_luna": "04:01",
+                    "puesta_luna": "14:07",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna25.gif"
+                },
+                {
+                    "fecha": "2016-3-5",
+                    "fecha_larga": "Sábado 5 de Marzo",
+                    "temp_maxima": "11",
+                    "temp_minima": "5",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/2.png",
+                    "texto": "Nubes dispersas",
+                    "humedad": "64",
+                    "viento": "42",
+                    "dir_viento": "Noroeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/NO.png",
+                    "salida_sol": "7:34",
+                    "puesta_sol": "18:57",
+                    "salida_luna": "04:50",
+                    "puesta_luna": "15:07",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna26.gif"
+                },
+                {
+                    "fecha": "2016-3-6",
+                    "fecha_larga": "Domingo 6 de Marzo",
+                    "temp_maxima": "10",
+                    "temp_minima": "3",
+                    "icono": "http://i5.tutiempo.net/wi/01/50/2.png",
+                    "texto": "Nubes dispersas",
+                    "humedad": "61",
+                    "viento": "49",
+                    "dir_viento": "Noroeste",
+                    "ico_viento": "http://i5.tutiempo.net/eltiempo/DirViento/NO.png",
+                    "salida_sol": "7:33",
+                    "puesta_sol": "18:58",
+                    "salida_luna": "05:36",
+                    "puesta_luna": "16:12",
+                    "ico_fase_luna": "http://i5.tutiempo.net/Fases/FasesFB50/Luna27.gif"
+                }
+            ]
+        
+    }
+}
